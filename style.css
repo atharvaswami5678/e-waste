@@ -1,0 +1,292 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: #444;
+    text-align: right;
+}
+
+.navbar ul {
+    list-style: none;
+    display: inline;
+    padding: 10px 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.dropdown {
+    position:relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #007BFF;
+}
+
+/* Existing CSS rules ... */
+
+.dropdown-content {
+    display: none;
+    position: unset;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #8b8b8bd3;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content.show {
+    display: block;
+}
+.main {
+    padding: 40px 0;
+}
+
+/* ... (Your existing CSS rules) ... */
+
+.services ul {
+    list-style: none;
+    display: block;
+    min-width: auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.services li a {
+    text-decoration: none;
+    color: #007BFF;
+    margin: 10px;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: block;
+    /* min-width: 160px; */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: scale(1); /* Add initial scale */
+}
+
+.services li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+    transform: scale(1.1); /* Magnify on hover */
+    transition: transform 0.3s; /* Smooth scale animation */
+}
+
+/* Add background image to .box */
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-image: url('gradient-wallpaper.jpg'); /* Set default background image */
+    background-size: cover; /* Adjust background size */
+    background-repeat: no-repeat; /* Prevent background repetition */
+}
+
+/* Change background image on hover */
+.box:hover {
+    background-image: url('xx1.jpg'); /* Set hover background image */
+    background-color: transparent; /* Make background transparent */
+}
+
+
+.capabilities {
+    margin-top: 20px;
+}
+
+.service-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer; /* Add pointer cursor on hoverable elements */
+}
+
+.box:hover {
+    background-color: #8d8d8d;
+    color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: scale(1.05); /* Magnify on hover */
+}
+
+.box h3 {
+    color: #007BFF;
+}
+
+.box p {
+    color: #555;
+}
+
+/* ... (previous CSS content) ... */
+
+/* Style for the "All Projects" button */
+.all-projects-button {
+    background-color: #bdbaba; /* Background color for the button */
+    color: #080808; /* Text color */
+    padding: 8px 16px; 
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom:3px;
+}
+
+.all-projects-button:hover {
+    background-color: #bdf7ef; /* Background color on hover */
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+/* Adjust the container to flex and justify the button to the right */
+.recent-projects .container {
+    display: flex;
+    justify-content: space-between;
+}
+/* ... (your existing CSS content) ... */
+
+/* Style for the slideshow */
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s step-end ; /* Add transition for smooth sliding */
+}
+
+.slideshow-container {
+    display: flex;
+    position: relative;
+    transition: transform 1s step-end; /* Add transition for smooth sliding */
+}
+
+.slide {
+    display: none;
+    flex-shrink: 0; /* Ensure the slide container doesn't shrink */
+}
+
+.slide img {
+    width: 100%; /* Ensure images fill the container */
+    height: auto;
+}
+
+/* Style for clickable images */
+.slide a {
+    text-decoration: none;
+}
+
+/* Style for slideshow navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* ---------------- */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('background.jpg'); /* Your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the fourth value (0.8) to control opacity */
+    /* backface-visibility: ; */
+    /* background-blend-mode:color-burn ; */
+}
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+label, select, textarea {
+    display: block;
+    margin: 10px 0;
+}
+
+h1 {
+    color: #333;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
